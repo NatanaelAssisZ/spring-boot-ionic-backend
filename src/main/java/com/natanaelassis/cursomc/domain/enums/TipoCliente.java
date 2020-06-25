@@ -1,4 +1,4 @@
-package com.natanaelassis.cursomc.domain;
+package com.natanaelassis.cursomc.domain.enums;
 
 public enum TipoCliente {
 

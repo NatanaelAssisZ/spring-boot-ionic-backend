@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.natanaelassis.cursomc.domain.Cidade;
 import com.natanaelassis.cursomc.domain.Cliente;
 import com.natanaelassis.cursomc.domain.Endereco;
-import com.natanaelassis.cursomc.domain.TipoCliente;
+import com.natanaelassis.cursomc.domain.enums.TipoCliente;
 import com.natanaelassis.cursomc.dto.ClienteDTO;
 import com.natanaelassis.cursomc.dto.ClienteNewDTO;
 import com.natanaelassis.cursomc.repositories.ClienteRepository;

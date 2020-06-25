@@ -20,7 +20,7 @@ import com.natanaelassis.cursomc.domain.PagamentoComBoleto;
 import com.natanaelassis.cursomc.domain.PagamentoComCartao;
 import com.natanaelassis.cursomc.domain.Pedido;
 import com.natanaelassis.cursomc.domain.Produto;
-import com.natanaelassis.cursomc.domain.TipoCliente;
+import com.natanaelassis.cursomc.domain.enums.TipoCliente;
 import com.natanaelassis.cursomc.repositories.CategoriaRepository;
 import com.natanaelassis.cursomc.repositories.CidadeRepository;
 import com.natanaelassis.cursomc.repositories.ClienteRepository;
