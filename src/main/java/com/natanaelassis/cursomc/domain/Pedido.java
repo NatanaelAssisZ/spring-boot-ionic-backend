@@ -20,17 +20,17 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Entity
 public class Pedido implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
 	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
-	private Date instance;
+	private Date instante;
 	
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="pedido")
 	private Pagamento pagamento;
-	
+
 	@ManyToOne
 	@JoinColumn(name="cliente_id")
 	private Cliente cliente;
@@ -44,15 +44,15 @@ public class Pedido implements Serializable {
 	
 	public Pedido() {
 	}
-	
-	public Pedido(Integer id, Date instance, Cliente cliente, Endereco enderecoDeEntrega) {
+
+	public Pedido(Integer id, Date instante, Cliente cliente, Endereco enderecoDeEntrega) {
 		super();
 		this.id = id;
-		this.instance = instance;
+		this.instante = instante;
 		this.cliente = cliente;
 		this.enderecoDeEntrega = enderecoDeEntrega;
 	}
-	
+
 	public double getValorTotal() {
 		double soma = 0.0;
 		for (ItemPedido ip : itens) {
@@ -60,7 +60,7 @@ public class Pedido implements Serializable {
 		}
 		return soma;
 	}
-
+	
 	public Integer getId() {
 		return id;
 	}
@@ -69,14 +69,14 @@ public class Pedido implements Serializable {
 		this.id = id;
 	}
 
-	public Date getInstance() {
-		return instance;
+	public Date getInstante() {
+		return instante;
 	}
 
-	public void setInstance(Date instance) {
-		this.instance = instance;
+	public void setInstante(Date instante) {
+		this.instante = instante;
 	}
-	
+
 	public Pagamento getPagamento() {
 		return pagamento;
 	}
