@@ -136,7 +136,7 @@ public class Pedido implements Serializable {
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
@@ -157,5 +157,5 @@ public class Pedido implements Serializable {
 		builder.append("Valor total: ");
 		builder.append(nf.format(getValorTotal()));
 		return builder.toString();
-	}
+	}	
 }

@@ -110,7 +110,7 @@ private static final long serialVersionUID = 1L;
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public String toString() {
 		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
@@ -125,4 +125,8 @@ private static final long serialVersionUID = 1L;
 		builder.append("\n");
 		return builder.toString();
 	}
+	
+	
+	
+	
 }
