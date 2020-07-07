@@ -13,7 +13,7 @@ import com.natanaelassis.cursomc.domain.Categoria;
 import com.natanaelassis.cursomc.domain.Produto;
 import com.natanaelassis.cursomc.repositories.CategoriaRepository;
 import com.natanaelassis.cursomc.repositories.ProdutoRepository;
-import com.natanaelassis.cursomc.resources.exception.ObjectNotFoundException;
+import com.natanaelassis.cursomc.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class ProdutoService {

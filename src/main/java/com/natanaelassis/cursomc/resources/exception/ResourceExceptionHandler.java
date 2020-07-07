@@ -1,4 +1,4 @@
-package com.natanaelassis.cursomc.servicesexceptions;
+package com.natanaelassis.cursomc.resources.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,10 +9,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.natanaelassis.cursomc.resources.exception.DataIntegrityException;
-import com.natanaelassis.cursomc.resources.exception.ObjectNotFoundException;
-import com.natanaelassis.cursomc.resources.exception.StandardError;
-import com.natanaelassis.cursomc.resources.exception.ValidationError;
+import com.natanaelassis.cursomc.services.exceptions.DataIntegrityException;
+import com.natanaelassis.cursomc.services.exceptions.ObjectNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {
